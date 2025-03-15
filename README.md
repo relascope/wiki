@@ -8,6 +8,12 @@ Collection of tutorials, samples, know-how...
 
 Guitar pro is not free :-(
 
+Tux Guitar
+----------
+Just works
+
+MuseScore
+---------
 gp5 files can be opened with MuseScore. However, you only get the notes. 
 
 - Create new file from template => Solo => Guitar with tabulature.
@@ -15,7 +21,6 @@ gp5 files can be opened with MuseScore. However, you only get the notes.
 
 => Linked Staves
 
-Fastest way. 
 
 
 # Audio to Midi in Realtime (monophon)
