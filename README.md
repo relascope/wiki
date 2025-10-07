@@ -2,6 +2,9 @@
 Collection of tutorials, samples, know-how...
 
 
+# Rotate video 90 clockwise
+
+    ffmpeg -i in.mov -vf "transpose=1" out.mov
 
 
 # Guitar Pro (gp5)
