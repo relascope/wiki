@@ -2,6 +2,13 @@
 Collection of tutorials, samples, know-how...
 
 
+# DaVinci Resolve
+
+does not work with AVI
+
+Edit (bottom) => rightclick Audio => normalize audio levels
+
+
 # Rotate video 90 clockwise
 
     ffmpeg -i in.mov -vf "transpose=1" out.mov
