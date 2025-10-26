@@ -9,7 +9,7 @@ does not work with AVI
 Edit (bottom) => rightclick Audio => normalize audio levels
 
 
-# Rotate video 90 clockwise
+# Rotate video 90 degrees clockwise
 
     ffmpeg -i in.mov -vf "transpose=1" out.mov
 
@@ -23,7 +23,7 @@ Edit (bottom) => rightclick Audio => normalize audio levels
 
 # Guitar Pro (gp5)
 
-Guitar pro is not free :-(
+Guitar Pro is not free :-(
 
 Tux Guitar
 ----------
@@ -53,15 +53,15 @@ How?
 Dodo MIDI 2 is a VST3 plugin and works fine on some platforms, including Ardour on Linux. 
 
 If you are using **Logic Pro**, you've got a problem, you have to work around:
-- use Kushview Element as a host for the VST3 plugin
-- configure Element for your preferred audio input
-- configure Element to use Logic Pro Virtual In as MIDI Output Device
+- Use Kushview Element as a host for the VST3 plugin
+- Configure Element for your preferred audio input
+- Configure Element to use Logic Pro Virtual In as the MIDI Output Device
 
 **Voila!**
 
 Technical details
 ------------------
-Logic Pro only supports Audio Unit plugins in the version V2 and partially V3. 
+Logic Pro only supports Audio Unit plugins in version V2 and partially in V3. 
 
 AU Plugins V2 do not support Audio input and MIDI Output. 
 
@@ -70,4 +70,9 @@ AU-VST-bridges don't work, cost money or may not work.
 For more complex projects
 --------------------------
 - Buy Vochlea Dubler 2
-- use Melodyne (polyphon, not realtime)
+- use Melodyne (polyphonic, not realtime)
+
+
+# Audio to MIDI
+
+- NeuralNote (uses Spotify's AI Plugin)
