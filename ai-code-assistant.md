@@ -21,12 +21,19 @@ local models
 
     ollama serve
     ollama pull qwen3:30b-a3b
-    aider --model qwen3:30b-a3b
 
+~/.aider.conf.yml 
 
-Create a file named .aider.model.settings.yml in your project root or home directory with:
+    model: ollama/qwen3:30b-a3b
+    openai-api-key: ollama
 
-    - name: ollama_chat/qwen3:30b-a3b
+can and should be added to profile (e.g. ~/.zshrc or ~/.bashre)
+
+    yexport OLLAMA_API_BASE="http://localhost:11434"
+
+Qwen sends working and response streams which confuses Ollama
+
+    aider --no-stream
 
 Now, running Aider without the --model flag will use Qwen3 by default.
 
