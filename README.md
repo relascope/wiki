@@ -1,15 +1,20 @@
 # music-knowhow
-Collection of tutorials, samples, know-how...
+Collection of tutorials, samples, know-how, snippets ...
 
 
-# DaVinci Resolve
+# Snippets
 
-does not work with AVI
+## Download YouTube video or playlist
 
-Edit (bottom) => rightclick Audio => normalize audio levels
+Directly to mov format
 
+    yt-dlp --recode-video mov "PLAYLIST_URL"
 
-# Rotate video 90 degrees clockwise
+Organise as a folder and keep an index of playlist position
+
+    yt-dlp -o "%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s" --recode-video mov "PLAYLIST_URL"  
+
+## Rotate video 90 degrees clockwise
 
     ffmpeg -i in.mov -vf "transpose=1" out.mov
 
@@ -20,6 +25,13 @@ Edit (bottom) => rightclick Audio => normalize audio levels
 2 = 90° counterclockwise
 
 3 = 90° clockwise and vertical flip
+
+
+# DaVinci Resolve
+
+does not work with AVI
+
+Edit (bottom) => rightclick Audio => normalize audio levels
 
 # Guitar Pro (gp5)
 
