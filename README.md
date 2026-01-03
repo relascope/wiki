@@ -50,6 +50,14 @@ gp5 files can be opened with MuseScore. However, you only get the notes.
 
 => Linked Staves
 
+# Logic Pro
+
+## Copy all chords from Global Chord Track
+
+- create session player Track
+- Paste chords from global track
+- copy region somewhere else (other project or later in the same project)
+- paste region chords to global track
 
 
 # Audio to Midi in Realtime (monophon)
