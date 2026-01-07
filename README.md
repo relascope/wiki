@@ -14,6 +14,29 @@ Organise as a folder and keep an index of playlist position
 
     yt-dlp -o "%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s" --recode-video mov "PLAYLIST_URL"  
 
+## Burn Subtitle in mov video
+
+Why?
+
+Logic Pro does not support subtitles in videos, but for practice sessions it is good to have them available in the synchronised video. 
+
+    yt-dlp0 --list-subs "URL"
+
+lists the available subtitles, which is important, because sometimes just "en" does not work. 
+
+    --embed-subs --write-subs --sub-lang en-nP7-2PuUl7o 
+
+- embed-subs: directly embedded into video
+- write-subs: download
+
+
+Although yt-dlp supports embedding  - only for a few containers (MKV, MP4) - which would not help anyway, because embedded subtitles are not supported in Logic Pro. 
+
+FFmpeg  can burn them directly into the frames, but somehow (not further diagnosed) not directly while converting to mov, so the intermediary step from webm to mp4 - even AVI does not work here -  is neccessary. 
+
+     ffmpeg -i MY_VID -vf "subtitles=MY_VID.vtt" -c:a copy output_burned.mp4
+     ffmpeg -i output_burned.mp4 MY_OUTPUT_VID.mov
+
 ## Rotate video 90 degrees clockwise
 
     ffmpeg -i in.mov -vf "transpose=1" out.mov
