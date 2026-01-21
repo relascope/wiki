@@ -1,5 +1,9 @@
 # AI Code Assistants
 
+JetBrains*
+-----------------------------------------------
+At the time of testing (January 2026), JetBrains IDEs offer a generous amount of free credit and can be used for open-source projects. 
+
 Cursor
 -----------------------------------------------
 - very fast, gets the job done
@@ -31,7 +35,7 @@ can and should be added to profile (e.g. ~/.zshrc or ~/.bashre)
 
     yexport OLLAMA_API_BASE="http://localhost:11434"
 
-Qwen sends working and response streams which confuses Ollama
+Qwen sends working and response streams, which confuses Ollama
 
     aider --no-stream
 
