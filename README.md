@@ -73,6 +73,21 @@ gp5 files can be opened with MuseScore. However, you only get the notes.
 
 => Linked Staves
 
+
+MuseScore
+========================================================================
+Recording MIDI in Realtime
+------------------------------------------------------------------------
+Realtime-Record Button in MuseScore4 is not accessible through long-press of the note-input button, and is not visible
+- Customise the Toolbar to make the button visible
+- Set shortcut for Realtime-advance. Make sure there is no conflict
+- set smallest note duration
+- MuseScore can now record
+- notates shit while recording (same notes have min duration and are connected with slur)
+- MuseScore cleans up afterwards
+
+
+
 # Logic Pro
 
 ## Copy all chords from Global Chord Track
