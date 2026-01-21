@@ -1,10 +1,13 @@
-# music-knowhow
+music-knowhow
+========================================================================
 Collection of tutorials, samples, know-how, snippets ...
 
 
-# Snippets
+Snippets
+========================================================================
 
-## Download YouTube video or playlist
+Download YouTube video or playlist
+------------------------------------------------------------------------
 
 Directly to mov format
 
@@ -14,7 +17,8 @@ Organise as a folder and keep an index of playlist position
 
     yt-dlp -o "%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s" --recode-video mov "PLAYLIST_URL"  
 
-## Burn Subtitle in mov video
+Burn Subtitle in mov video
+------------------------------------------------------------------------
 
 Why?
 
@@ -37,7 +41,8 @@ FFmpeg  can burn them directly into the frames, but somehow (not further diagnos
      ffmpeg -i MY_VID -vf "subtitles=MY_VID.vtt" -c:a copy output_burned.mp4
      ffmpeg -i output_burned.mp4 MY_OUTPUT_VID.mov
 
-## Rotate video 90 degrees clockwise
+Rotate video 90 degrees clockwise
+------------------------------------------------------------------------
 
     ffmpeg -i in.mov -vf "transpose=1" out.mov
 
@@ -50,22 +55,24 @@ FFmpeg  can burn them directly into the frames, but somehow (not further diagnos
 3 = 90° clockwise and vertical flip
 
 
-# DaVinci Resolve
+DaVinci Resolve
+========================================================================
 
 does not work with AVI
 
 Edit (bottom) => rightclick Audio => normalize audio levels
 
-# Guitar Pro (gp5)
+Guitar Pro (gp5)
+========================================================================
 
 Guitar Pro is not free :-(
 
 Tux Guitar
-----------
+------------------------------------------------------------------------
 Just works
 
 MuseScore
----------
+------------------------------------------------------------------------
 gp5 files can be opened with MuseScore. However, you only get the notes. 
 
 - Create new file from template => Solo => Guitar with tabulature.
@@ -88,9 +95,11 @@ Realtime-Record Button in MuseScore4 is not accessible through long-press of the
 
 
 
-# Logic Pro
+Logic Pro
+========================================================================
 
-## Copy all chords from Global Chord Track
+Copy all chords from Global Chord Track
+------------------------------------------------------------------------
 
 - create session player Track
 - Paste chords from global track
@@ -98,16 +107,20 @@ Realtime-Record Button in MuseScore4 is not accessible through long-press of the
 - paste region chords to global track
 
 
-# Audio to Midi in Realtime (monophon)
+Audio to Midi 
+========================================================================
 
-Why?
------
+in Realtime (monophon)
+------------------------------------------------------------------------
+
+### Why?
+
 - compose with your voice
 - play cello with your guitar
 - ...
 
-How?
------
+### How?
+
 Dodo MIDI 2 is a VST3 plugin and works fine on some platforms, including Ardour on Linux. 
 
 If you are using **Logic Pro**, you've got a problem, you have to work around:
@@ -117,20 +130,21 @@ If you are using **Logic Pro**, you've got a problem, you have to work around:
 
 **Voila!**
 
-Technical details
-------------------
+### Technical details
+
 Logic Pro only supports Audio Unit plugins in version V2 and partially in V3. 
 
 AU Plugins V2 do not support Audio input and MIDI Output. 
 
 AU-VST-bridges don't work, cost money or may not work. 
 
-For more complex projects
---------------------------
+### For more complex projects
+
 - Buy Vochlea Dubler 2
 - use Melodyne (polyphonic, not realtime)
 
 
-# Audio to MIDI
+Audio to MIDI (processed - no realtime)
+------------------------------------------------------------------------
 
-- NeuralNote (uses Spotify's AI Plugin)
+- NeuralNote (uses Spotify's AI Plugin), homepage for basic-pitch https://basicpitch.spotify.com/
