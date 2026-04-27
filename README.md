@@ -3,6 +3,18 @@ music-knowhow
 Collection of tutorials, samples, know-how, snippets ...
 
 
+JackAudio on MacOS
+==================
+Start everything as SU  
+    sudo ./Applications/Contents/MacOS/QJackCtl
+
+To connect to SooperLooper, start with sudo   
+The App can be started without sudo, and it can connect.  
+
+Did not manage to connect Ardour9 to Jack (Ardour9 won't start with sudo without modification.  
+
+
+
 Snippets
 ========================================================================
 
