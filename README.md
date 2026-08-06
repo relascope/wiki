@@ -18,7 +18,7 @@ Did not manage to connect Ardour9 to Jack (Ardour9 won't start with sudo without
 Snippets
 ========================================================================
 
-add image to wav audio- keep wav
+add image to wav audio- keep wav in video container
 ------------------------------------------------------------------------
     ffmpeg -loop 1 -i image.jpg -i audio.wav -c:v libx264 -tune stillimage -c:a copy -shortest output.mkv
 
